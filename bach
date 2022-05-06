@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<NoteDensityFeature &le; 6.114<br/>gini = 0.439<br/>samples = 252<br/>value = [82, 170]<br/>class = bach>, fillcolor="#99ccf2"] ;
+1 [label=<PitchVarietyFeature &le; 25.5<br/>gini = 0.098<br/>samples = 77<br/>value = [73, 4]<br/>class = non-bach>, fillcolor="#e68844"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<QualityFeature &le; 0.5<br/>gini = 0.052<br/>samples = 75<br/>value = [73, 2]<br/>class = non-bach>, fillcolor="#e6843e"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 73<br/>value = [73, 0]<br/>class = non-bach>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = bach>, fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 2]<br/>class = bach>, fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label=<PitchClassDistributionFeature &le; 0.256<br/>gini = 0.098<br/>samples = 175<br/>value = [9, 166]<br/>class = bach>, fillcolor="#44a2e6"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<AverageMelodicIntervalFeature &le; 3.032<br/>gini = 0.024<br/>samples = 168<br/>value = [2, 166]<br/>class = bach>, fillcolor="#3b9ee5"] ;
+6 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 166<br/>value = [0, 166]<br/>class = bach>, fillcolor="#399de5"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 2<br/>value = [2, 0]<br/>class = non-bach>, fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 7<br/>value = [7, 0]<br/>class = non-bach>, fillcolor="#e58139"] ;
+6 -> 10 ;
+}
